@@ -2,6 +2,25 @@
 
 The source code of my website (located at [karamoff.dev](https://karamoff.dev))
 
+## Pre-install
+sudo apt update
+sudo apt upgrade
+
+## Install node 12.x
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+## Install yarn
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install yarn
+
+## Install gulp
+npm install --global gulp-cli
+
+## Install app
+yarn install
+
 ## Build
 
 To build the static version of the website in `public` directory:
